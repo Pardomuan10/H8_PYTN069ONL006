@@ -2,7 +2,7 @@ import numpy as np
 
 x = np.linspace(-1,1,100)
 y = np.array(x)
-sbx=np.array([-3,3])
+sbx1=np.array([-3,3])
 sbx2=np.array(0*sbx1)
 import matplotlib.pyplot as plt
 plt.plot(x,y,'r-')
