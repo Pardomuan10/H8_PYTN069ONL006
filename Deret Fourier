@@ -1,0 +1,31 @@
+import numpy as np
+
+x = np.linspace(-1,1,100)
+y = np.array(x)
+sbx=np.array([-3,3])
+sbx2=np.array(0*sbx1)
+import matplotlib.pyplot as plt
+plt.plot(x,y,'r-')
+plt.plot(sbx1,sbx2,'-k')
+plt.xlim([-3, 3])
+plt.ylim([-2, 2])
+plt.show()
+
+xa=np.linspace(-3,3,300)
+sbx=np.array([-3,3])
+sbx2=np.array(0*sbx1)
+yf=np.zeros(300)
+for ulang in range(10):
+    n=input('n=')
+    n=eval(n)
+    yf=np.zeros(300)
+    for i in range(n):
+        yf=yf+2*((-1)**(i))*np.sin((i+1)*np.pi*xa)/((i+1)*np.pi)
+    
+    plt.plot(xa,yf,'-g')
+    plt.plot(x,y,'r-')
+    plt.plot(sbx1,sbx2,'-k')
+    plt.xlim([-3, 3])
+    plt.ylim([-2, 2])
+    plt.show()
+
